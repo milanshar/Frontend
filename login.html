@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(
+                700deg,
+                #56ff,
+                #68ff
+            );
+        }
+        body{
+            zoom: 125%;
+        }
+        .container{
+            border: 2px solid black;
+            width: 30vw;
+            height: 270px;
+            border-radius: 12px;
+            color: white;
+            margin-top: 105px;
+            margin:auto;
+            text-align: center;
+            margin-top: 80px;
+            background-color: white;
+        }
+        form{
+            margin-top: 26px;
+            text-align: center;
+        }
+        input{
+            margin: 12px;
+        }
+        h2{
+            color: black;
+        }
+        button{
+            background-color: royalblue;
+            color: white;
+            width: 22vw;
+            margin: 12px;
+        }
+        h5{
+            color: black;
+            display: inline;
+        }
+        .sign{
+            color: white;
+            text-decoration: none;
+        }
+        .orbta{
+            color: black;
+        }
+        h6{
+            margin-top: 5px;
+        }
+        .log{
+            background-color: royalblue;
+            color: white;
+            border: none;
+            width: 201px;
+            position: relative;
+            top: 19px;
+        }
+        .bhai{
+            margin-top: -4px;
+            font-size: 12px;
+            color: black;
+        }
+        .rubu{
+            margin-top: -17px;
+        }
+        h6 a:hover{
+            color: royalblue;
+        }
+        h6 a{
+            text-decoration: none;
+            color: black;
+        }
+        .eye1{
+            width: 169px;
+            height: 21px;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 2px;
+            position: relative;
+            top: 12px;
+        }
+        .eye1 input{
+            width: 35%;
+            height: 44%;
+            border: 0;
+            outline: 0;
+            font: 14px;
+            position: relative;
+            left: -36px;
+            bottom: 11px;
+        }
+        .eye1 img{
+            width: 31px;
+            cursor: pointer;
+            position: relative;
+            left: 24px;
+            top: -3px;
+            height: 26px;
+            width: 28px;
+        }
+        .bs{
+            position: relative;
+            top: 20px;
+        }
+        @media screen and (width: 768px) {
+            body{
+                zoom: 119%;
+            }
+            .container{
+                zoom: 113%;
+            }
+        }
+        @media screen and (width: 425px) {
+            .container{
+                zoom: 101%;
+                width: 51vw;
+            }
+        }
+        @media screen and (width: 375px) {
+            .container{
+                zoom: 106%;
+                width: 58vw;
+            }
+        }
+        @media screen and (width: 320px) {
+            .container{
+                zoom: 101%;
+                width: 70vw;
+            }
+        }
+    </style>
+</head>                                                                                                                                                                                                                                                                                                                                             
+<body>
+    <div class="container">
+        <h2>Log In Now</h2>
+        <form action="form.py">
+            <input type="email" placeholder="Email Id" required>
+            <div class="eye1">
+                <input type="password" placeholder="Password" id="laila1" required>
+                <img src="../gymwebsite/icons8-closed-eye-64.png" alt="" onclick="clickme()" id="image1">
+            </div>
+            <div><a href="back.html"><input type="submit" value="Login" class="log"></a></div>
+        </form>
+        <div class="bs">
+            <div class="bhai">-------or-------</div>
+            <div class="orbta"><h6><a href="./otp.html">Forget Password?</a></h6></div>
+            <div class="rubu"><h5>Don't Have Any Account?</h5><h5><a href="signup.html">Sign Up</a></h5></div>
+        </div>
+    </div>
+    <script>
+    function clickme()
+    {
+       let pp=document.getElementById("laila1");
+       let image=document.getElementById("image1");
+       if(pp.type=="password")
+       {
+            pp.type="text";
+            image.src="icons8-eye-30.png";
+       }
+       else
+       {
+            pp.type="password";
+            image.src="icons8-closed-eye-64.png";
+       }
+    }
+    </script>
+</body>
+</html>
