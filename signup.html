@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(
+                700deg,
+                #56ff,
+                #68ff
+            );
+        }
+        body{
+            zoom: 125%;
+        }
+        .container{
+            border: 2px solid black;
+            width: 30vw;
+            height: 350px;
+            border-radius: 12px;
+            color: white;
+            margin-top: 105px;
+            margin:auto;
+            text-align: center;
+            margin-top: 63px;
+            background-color: white;
+        }
+        form{
+            margin-top: 26px;
+            text-align: center;
+        }
+        input{
+            margin: 12px;
+        }
+        h2{
+            color: black;
+        }
+        button{
+            background-color: royalblue;
+            color: white;
+            width: 22vw;
+            margin: 12px;
+        }
+        h6{
+            color: black;
+            display: inline;
+            position: relative;
+            top: 44px;
+        }
+        .sign{
+            color: white;
+            text-decoration: none;
+            background-color: royalblue;
+            width: 190px;
+            position: relative;
+            top: 43px;
+        }
+        .aur{
+            margin-bottom: -21px;
+            margin-top: -27px;
+        }
+        #then{
+            color: white;
+        }
+        .eye1{
+            width: 169px;
+            height: 21px;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 2px;
+            position: relative;
+            top: 12px;
+        }
+        .eye1 input{
+            width: 35%;
+            height: 44%;
+            border: 0;
+            outline: 0;
+            font: 14px;
+            position: relative;
+            left: -36px;
+            bottom: 11px;
+        }
+        .eye1 img{
+            width: 31px;
+            cursor: pointer;
+            position: relative;
+            left: 24px;
+            top: -3px;
+            height: 26px;
+            width: 28px;
+        }
+        .eye2{
+            width: 169px;
+            height: 21px;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 2px;
+            position: relative;
+            top: 35px;
+        }
+        .eye2 input{
+            width: 64%;
+            height: 44%;
+            border: 0;
+            outline: 0;
+            font: 14px;
+            position: relative;
+            left: -12px;
+            bottom: 11px;
+        }
+        .eye2 img{
+            width: 31px;
+            cursor: pointer;
+            position: relative;
+            left: 0px;
+            top: -3px;
+            height: 26px;
+            width: 28px;
+        }
+        #bsaur{
+            cursor: pointer;
+        }
+        @media screen and (width: 768px) {
+            body{
+                zoom: 119%;
+            }
+        }
+        @media screen and (width: 425px) {
+            .container{
+                zoom: 91%;
+                width: 51vw;
+            }
+        }
+        @media screen and (width: 375px) {
+            .container{
+                zoom: 96%;
+                width: 58vw;
+            }
+        }
+        @media screen and (width: 320px) {
+            .container{
+                zoom: 96%;
+                width: 66vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+<div class="container">
+    <h2>Sign Up Now</h2>
+    <form action="form.py">
+        <div>
+            <input type="text" placeholder="Full Name" required>
+        </div>
+        <div>
+            <input type="email" placeholder="Email id" required>
+        </div>
+        <div class="eye1">
+            <input type="password" placeholder="Password" id="laila1" required>
+            <img src="../gymwebsite/icons8-closed-eye-64.png" alt="" onclick="clickme()" id="image1">
+        </div>
+        <div class="eye2">    
+            <input type="password" placeholder="Confirm Password" id="laila2" required> 
+            <img src="../gymwebsite/icons8-closed-eye-64.png" alt="" onclick="clickmine()" id="image2">
+        </div>
+        <div class="aur"><p id="then">aaaa</p></div>
+        <div><input type="button" value="Register" class="sign" onclick="clicked()" onmouseout="check()" id="bsaur"></div>
+    </form>
+    <h6>Already Have An Account?</h6><h6><a href="login.html">Login In</a></h6>
+</div>
+</main>
+<script>
+    function clicked()
+    {
+        let pass = document.getElementById("laila1").value;
+        let confirm = document.getElementById("laila2").value;
+        let mess = document.getElementById("then");
+        let by = document.getElementById("bsaur");
+        if(pass.length!=0)
+        {
+            if(pass!=confirm)
+            {
+                mess.textContent= "password don't match";
+                mess.style.color= "red";
+            }
+            else
+            {
+                by.type="submit"
+            }
+        }
+    }
+    function check()
+    {
+        let mess=document.getElementById("then");
+        mess.style.color= "white";
+    }
+    function clickme()
+    {
+       let pp=document.getElementById("laila1");
+       let image=document.getElementById("image1");
+       if(pp.type=="password")
+       {
+            pp.type="text";
+            image.src="icons8-eye-30.png";
+       }
+       else
+       {
+            pp.type="password";
+            image.src="icons8-closed-eye-64.png";
+       }
+    }
+    function clickmine()
+    {
+        let pppp=document.getElementById("laila2");
+        let image1=document.getElementById("image2");
+        if(pppp.type=="password")
+        {
+            pppp.type="text";
+            image1.src="icons8-eye-30.png";
+        }
+        else
+        {
+            pppp.type="password";
+            image1.src="icons8-closed-eye-64.png";
+        }
+    }
+</script>
+</body>
+</html>
