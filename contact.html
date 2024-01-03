@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+          background-color: lightskyblue;
+          zoom: 125%;
+        }
+        .contain
+        {
+          background-color: white;
+          width: 550px;
+          position: relative;
+          top: 80px;
+          left: 265px;
+          height: 350px;
+          box-shadow: 7px 7px 4px rgba(20, 20, 20, 0.37);
+        }
+        #habhai
+        {
+          background-color: rgb(0, 110, 255);
+          color: rgb(0, 110, 255);
+        }
+        #item1
+        {
+          display: block;
+          position: relative;
+          top: 12px;
+          left: 12px;
+          border-radius: 5px;
+          border: 1px solid black;
+          height: 28px;
+        }
+        #item2
+        {
+          display: block;
+          position: relative;
+          top: 21px;
+          left: 12px;
+          border-radius: 5px;
+          border: 1px solid black;
+          height: 28px;
+        }
+        #item3
+        {
+          display: block;
+          position: relative;
+          top: 30px;
+          left: 12px;
+          height: 73px;
+          border-radius: 5px;
+          border: 1px solid black;
+          text-align: top;
+        }
+        #item4
+        {
+          position: relative;
+          top: 12px;
+          left: 12px;
+        }
+        #item3::placeholder
+        {
+          position: relative;
+          top: -19px;
+          left: 1px;
+        }
+        #item5
+        {
+          position: relative;
+          top: 43px;
+          left: 12px;
+          border-radius: 4px;
+          border: 1px solid black;
+          height: 25px;
+          width: 168px;
+          background-color: lightskyblue;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        #ty
+        {
+          position: relative;
+          top: -245px;
+          left: 192px;
+          background-color: rgb(203, 235, 255);
+          width: 358px;
+          height: 332px;
+          color: rgb(203, 235, 255);
+        }
+        @media screen and (width:1024px){
+          .contain {
+            zoom: 116%;
+            position: relative;
+            left: 14vw;
+            top: 5vw;
+          }
+          body{
+            zoom: 100%;
+          }
+        }
+        @media screen and (width:768px){
+          .contain {
+            zoom: 100%;
+            position: relative;
+            left: 14vw;
+            top: 10vw;
+          }
+          body{
+            zoom: 100%;
+          }
+        }
+        @media screen and (width:425px){
+          
+          body{
+            zoom: 100%;
+          }
+          .contain {
+            zoom: 67%;
+            position: relative;
+            left: 8vw;
+            top: 50vw;
+          }
+        }
+        @media screen and (width:375px){
+          
+          body{
+            zoom: 100%;
+          }
+         .contain {
+             zoom: 59%;
+            position: relative;
+            left: 8vw;
+            top: 63vw;
+          }
+        }
+        @media screen and (width:320px){
+          
+          body{
+            zoom: 100%;
+          }
+        
+          .contain {
+          zoom: 52%;
+          position: relative;
+          left: 5vw;
+          top: 86vw;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+      <div id="habhai">
+        hi
+      </div>
+      <h1 id="item4">
+        Contact Us
+      </h1>
+      <form action="form.py">
+        <input type="text" placeholder="Name" id="item1" onfocus="focused()" onblur="blured()" required>
+        <input type="email" placeholder="Email" id="item2" onfocus="focused1()" onblur="blured1()" required>
+        <input type="text" placeholder="Your Message....." id="item3" onfocus="focused2()" onblur="blured2()">
+        <input type="submit" value="Send Message" id="item5">
+      </form>
+      <div id="ty">
+        1
+        <img src="../gymwebsite/transparent-removebg-preview.png" alt="">
+      </div>
+    </div>
+    <script>
+      function focused()
+      {
+        document.getElementById("item1").style.background="lightblue";
+      }
+      function blured()
+      {
+        document.getElementById("item1").style.background="white";
+      }
+      function focused1()
+      {
+        document.getElementById("item2").style.background="lightblue";
+      }
+      function blured1()
+      {
+        document.getElementById("item2").style.background="white";
+      }
+      function focused2()
+      {
+        document.getElementById("item3").style.background="lightblue";
+      }
+      function blured2()
+      {
+        document.getElementById("item3").style.background="white";
+      }
+    </script>
+</body>
+</html>
