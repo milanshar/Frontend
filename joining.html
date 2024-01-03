@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(../gymwebsite/new\ gym\ template.png);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
+            font-family: "playball";
+            zoom: 125%;  
+        }
+        .logo{
+            border: solid 1.5px black;
+            margin: 10px;
+            color: white;
+            display: inline-block;
+            font-size: 7px;
+            word-spacing: 1px;
+        }
+        .logo img{
+            width:50px;
+            filter: invert(100%);
+        }
+        .logo div{
+            text-align: center;
+        }
+        .container{
+            border: 1px solid white;
+            margin: 34px 10px;
+            padding: 75px;
+            width: 28vw;
+            height: 34px;
+            border-radius: 12px;
+            color: white;
+            margin-top: 105px;
+        }
+        h4{
+            margin: -64px -44px;
+            padding: 15px 10px;
+            size: 2vw;
+            margin-left: -35px;
+            font-family: none;
+        }
+        form{ 
+            margin: 67px;
+            margin-left: -35px;
+            display: block;
+            text-align: center;
+            width: 45%;
+
+        }
+           form input{
+            border:1px solid black; 
+            width:196%;
+            margin: 3px;
+            text-align: center;
+            border-radius: 5px;
+        }
+           label #form7{
+            background-color:rgb(245, 162, 8);
+            width: 60%;
+            border: none;
+            text-align: center;
+            margin-left: -31px;
+            margin-top: 8px;
+
+        }
+        a:hover{
+        color: orange;
+        text-decoration: none;
+        font-size: 17px;
+       }
+       a{
+        color: white;
+        text-decoration: none;
+       }
+      
+       .nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left:101px;
+            margin-top: -48px;
+            font-family: "playball"; 
+        }
+        .point{
+            width: 110px;
+            color: white;
+        }
+        .active3 a{
+            color: darkorange;
+        }
+        .logo{
+            font-family: none;
+        }
+        button{
+        background-color: darkorange;
+       }
+       .active5{
+        margin-right: -54px;
+       }
+       .active{
+        border: 1px solid black;
+       }
+       .active a{
+        color: black;
+       }
+       @media only screen and (width:1024px){
+            body{
+                zoom: 100%;
+            }
+            .container{
+                zoom: 112%;
+            }
+            .nav {
+                zoom: 95%;
+                margin-right: 0vw;
+                margin-top: -5vw;
+            }
+       }
+       @media only screen and (width:768px){
+            body{
+                zoom: 77%;
+            }
+            .container{
+                zoom: 165%;
+            }
+            .point{
+                zoom: 89%;
+            }
+            .nav {
+                zoom: 109%;
+                margin-right: -9vw;
+                position: relative;
+                left: -7vw;
+                top: 0.5vw;
+            }
+       }
+       @media only screen and (width:425px){
+            body{
+                zoom: 188%;
+                height: 136vh;
+            }
+            .container{
+                zoom: 141%;
+                width: 48vw;
+            }
+            .active{
+                zoom: 87%;
+                position: relative;
+                left: -19vw;
+            }
+            .point{
+                zoom: 73%;
+                margin-right: -23vw;
+                position: relative;
+                left: -25vw;
+                top: -2vw;
+            }
+            .active5{
+                position: relative;
+                left: -19vw;
+                top: -1.5vw;
+            }
+            .active6{
+                position: relative;
+                left: -25vw;
+                top: -1.5vw;
+            }
+            .logo{
+                zoom: 82%;
+            }
+            .nav {
+                zoom: 92%;
+                margin-right: -118vw;
+                position: relative;
+                top: 2.5vw;
+                left: -3vw;
+            }
+       }
+       @media only screen and (width:375px){
+            body{
+                zoom: 91%;
+                height: 136vh;
+            }
+            .container{
+                zoom: 131%;
+                width: 48vw;
+            }
+            .nav{
+                zoom: 90%;
+                margin-right: -53vw;
+            }
+            .active{
+                zoom: 87%;
+                position: relative;
+                left: -19vw;
+            }
+            .point{
+                zoom: 73%;
+                margin-right: -23vw;
+                position: relative;
+                left: -26vw;
+                top: -2vw;
+            }
+            .active5{
+                position: relative;
+                left: -22vw;
+                top: -1.5vw;
+            }
+            .active6{
+                position: relative;
+                left: -25vw;
+                top: -1.5vw;
+            }
+       }
+       @media screen and (width:320px){
+            .nav{
+                zoom: 55%;
+                margin: 20vw;
+                position: relative;
+                top: -32vw;
+            }
+            .logo{
+                width: 17vw;
+                height: auto;
+                margin-top: 3vw;
+                zoom: 38%;
+                position: relative;
+                top: 4vw;
+            }
+            .habhai{
+                zoom: 166%;
+                width: 10vw;
+            }
+            .active{
+                margin: -2vw;
+                zoom: 79%;
+            }
+            .active5{
+                position: relative;
+                left: 13vw;
+            }
+            .active6{
+                position: relative;
+                left: 19vw;
+            }
+            .active4{
+                margin: -1vw;
+            }
+            .point{
+                zoom:93%;
+                position: relative;
+                left: 5vw;
+            }
+            .soon{
+                zoom: 161%;
+                position: relative;
+                top: -19vw;
+                left: -20vw;
+            }
+            body{
+                zoom: 100%;
+                height: 100vh;
+                background-position: center;
+                width: 100%;
+            }
+            .koina{
+                font-size: 5vw;
+            }
+            .container {
+                zoom: 84%;
+                width: 61vw;
+            }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../gymwebsite/gym-logo-gad0b22e37_1280.png"alt=" ">
+            <div><b>WORKOUT POINT</b></div>
+        </div>
+        <div class="nav">
+            <div class="point active1"><b><a href="./index.html">HOME</a></b></div>
+            <div class="point active2"><b><a href="./about.html">BLOG</a></b></div>
+            <div class="point active3"><b><a href="./joining.html">APPLY</a></b></div>
+            <div class="point active4"><b><a href="./contact.html">CONTACT</a></b></div>
+            <div class="active active5"><button class="koina sab"><b><a href="signup.html">Sign Up</a></b></button></div>
+            <div class="active active6"><button class="koina thike"><b><a href="login.html">Log In</a></b></button></div>   
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <h4>  JOIN  THE  BEST  GYM  NOW</h4>
+        <form action="noaction.py">
+           <input type="text"placeholder="Enter Your Name"id="form1" onfocus="focused()" onblur="blured()" required>
+           <input type="text"placeholder="Enter Your Age"id="form2" onfocus="focused1()" onblur="blured1()" required>
+           <label for="form3">
+            <input type="tel"name="mobileno."placeholder="phoneno."id="form3"pattern="[0-9]{10}" required onfocus="focused2()" onblur="blured2()">
+           </label>
+           <label for="form7">
+            <input type="submit"name="baka"id="form7">
+           </label>
+        </form>
+    </main>
+    </div>
+<script src="form.js"></script>
+</body>
+</html>
