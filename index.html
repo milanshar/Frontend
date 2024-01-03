@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKOUT POINT</title>
+    <style>
+        /*mobile-s pr phele inspect kr ke set kr dena fir cross kr dena chrome page ko and fir inspect krke dimesion dikhana tabhi saare page pr shi dikhega*/
+        body{
+            font-family: "playball";
+            background-image: url(../gymwebsite/new\ gym\ template.png);
+            background-size: cover;
+            height: 80vh;
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
+            zoom: 125%;   
+        }
+        .logo{
+            border: solid 1.5px black;
+            margin: 10px;
+            color: white;
+            display: inline-block;
+            font-size: 7px;
+            word-spacing: 1px;
+        }
+        .logo img{
+            width:50px;
+            filter: invert(100%);
+        }
+        .logo div{
+            text-align: center;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left:82px;
+            margin-top: -48px;
+        }
+        .point{
+            width: 110px;
+            color: white;
+        }
+        
+        .container1{
+            border: solid,1.5px,black;
+            width: 50%;
+            margin-top: 100px;
+            margin-left: 80px;
+            height:30px;
+            padding: 7px;
+            font-size:4vw;
+            color:white;
+            text-decoration: none;
+            margin-top: 115px;
+        }
+         .container2{
+            border: solid,1.5px,black;
+            width: 50%;
+            height:30px;
+            margin-left: 80px;
+            margin-top:10px;
+            padding: 7px;
+            font-size:3vw;
+            color:orange;
+            text-decoration: none;
+        }
+         .container3{
+            border: solid,1.5px,black;
+            width: 50%;
+            height:30px;
+            margin-left: 80px;
+            margin-top:1px;
+            padding: 7px;
+            font-size:3vw;
+            color:white;
+            text-decoration: none;
+        }
+        .member{
+            border: solid,1.2px,darkorange;
+            background-color: orange;
+            border-radius: 5px;
+            width: 10%;
+            height:21px;
+            margin-left: 90px;
+            margin-top: 10px;
+            padding: 7px;
+            font-size: small;
+            text-align: center;
+            
+        }
+        .member a{
+            text-decoration: none;
+            color:black;
+            font-size:1.5vw;
+        }
+        .member a:hover{
+            color: black;
+            text-decoration: none;
+        }
+       a:hover{
+        color: darkorange;
+        text-decoration: none;
+        font-size: 17px;
+       }
+       a{
+        color: white;
+        text-decoration: none;
+       }
+       .active1 a{
+        color: orange;
+        text-decoration: none;
+       }
+       .soon{
+        margin-bottom: 12px;
+       }
+       .logo{
+        font-family: none;
+       }
+       button{
+        background-color: darkorange;
+       }
+       .active5{
+        margin-right: -54px;
+       }
+       .active a{
+        color: black;
+       }
+       @media screen and (min-width:768px) and (max-width:1024px) {
+            .nav{
+                margin-left: 7vw;
+                width: 89vw; 
+            }
+            .point{
+                font-size: 84%;
+                margin: -1vw;
+                position: relative;
+                left: 2vw;
+            }
+            .koina{
+                font-size: 74%;
+                width: 6vw;
+            }
+            .thike{
+                margin-right: 5vw;
+                position: relative;
+                left: 4vw;
+            }
+            .sab{
+                position: relative;
+                left: 0vw;
+            }
+            body{
+                zoom: 108%;
+            }
+       }
+       @media screen and (width:768px){
+            .point{
+                position: relative;
+                left: 2vw;
+            }
+            .logo{
+                width: 7vw;
+            }
+            .nav{
+                margin-top: -8vw;
+            }
+       }
+       @media screen and (min-width:425px) and (max-width:767px){
+            .point{
+                font-size: 61%;
+                margin: -4vw;
+                margin-left: -20vw;
+                position: relative;
+                left: 18vw;
+            }
+            .logo{
+                width: 8vw;
+                height: auto;
+                margin-top: 3vw;
+                zoom: 83%;
+            }
+            .logo img{
+                width: 7vw;
+                height: auto;
+            }
+            .koina{
+                margin-right: -5vw;
+                font-size: 49%;
+            }
+            .active{
+                margin: 0vw;
+                width: -1vw;
+                margin-top: -1vw;
+            }
+            body{
+                zoom: 125%;
+                height: 96vh;
+            }
+            .nav{
+                font-size: 4vw;
+                margin-top: -9vw;
+                margin-left: 9vw;
+                margin: -2vw;
+                position: relative;
+                top: -7vw;
+                left: 10vw;
+            }
+            .active5{
+                position: relative;
+                left: 2vw;
+            }
+            .soon{
+                position: relative;
+                left: -16vw;
+                top: -15vw;
+                zoom: 166%;
+                width: 73vw;
+            }
+            .container2{
+                position: relative;
+                top: -6vw;
+            }
+            .container3{
+                position: relative;
+                top: -11vw;
+            }
+            .member{
+                position: relative;
+                top: -16vw;
+                padding: 0vw;
+                width: 11vw;
+            }
+       }
+       @media screen and (min-width:375px) and (max-width:424px){
+            .nav{
+                zoom: 50%;
+                margin: 20vw;
+                position: relative;
+                top: -33vw;
+            }
+            .logo{
+                width: 8vw;
+                height: auto;
+                margin-top: 3vw;
+                zoom: 45%;
+                position: relative;
+                top: 4vw;
+            }
+            .habhai{
+                zoom: 166%;
+                width: 10vw;
+            }
+            .active{
+                margin: -2vw;
+                zoom: 79%;
+            }
+            .active5{
+                position: relative;
+                left: 13vw;
+            }
+            .active6{
+                position: relative;
+                left: 19vw;
+            }
+            .active4{
+                margin: -1vw;
+            }
+            .point{
+                zoom:93%;
+                position: relative;
+                left: 6vw;
+            }
+            .container2{
+                position: relative;
+                top: -6vw;
+            }
+            .container3{
+                position: relative;
+                top: -11vw;
+            }
+            .member{
+                position: relative;
+                top: -16vw;
+                padding: 0vw;
+                width: 11vw;
+            }
+            .soon{
+                zoom: 129%;
+                position: relative;
+                top: -27vw;
+                left: -16vw;
+            }
+            .koina{
+                font-size: 5vw;
+            }
+       }
+       @media screen and (min-width:320px) and (max-width:374px){
+            .nav{
+                zoom: 55%;
+                margin: 20vw;
+                position: relative;
+                top: -32vw;
+            }
+            .logo{
+                width: 8vw;
+                height: auto;
+                margin-top: 3vw;
+                zoom: 38%;
+                position: relative;
+                top: 4vw;
+            }
+            .habhai{
+                zoom: 166%;
+                width: 10vw;
+            }
+            .active{
+                margin: -2vw;
+                zoom: 79%;
+            }
+            .active5{
+                position: relative;
+                left: 13vw;
+            }
+            .active6{
+                position: relative;
+                left: 19vw;
+            }
+            .active4{
+                margin: -1vw;
+            }
+            .point{
+                zoom:93%;
+                position: relative;
+                left: 5vw;
+            }
+            .container2{
+                position: relative;
+                top: -6vw;
+                padding: 1vw;
+                font-size: 5vw;
+                width: 52vw;
+            }
+            .container3{
+                position: relative;
+                top: -11vw;
+                padding: 2vw;
+                font-size: 5vw;
+                left: -1vw;
+            }
+            .member{
+                position: relative;
+                top: -18vw;
+                left: -2vw;
+                padding: 0vw;
+                width: 15vw;
+            }
+            .soon{
+                zoom: 161%;
+                position: relative;
+                top: -19vw;
+                left: -20vw;
+            }
+            body{
+                zoom: 100%;
+                height: 100vh;
+                background-position: center;
+                width: 100%;
+            }
+            .koina{
+                font-size: 5vw;
+            }
+            .container1{
+                padding: 1vw;
+                font-size: 6vw;
+                width: 44vw;
+            }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../gymwebsite/gym-logo-gad0b22e37_1280.png"alt=" ">
+            <div class="habhai"><b>WORKOUT  POINT</b></div>
+        </div>
+        <div class="nav">
+                <div class="point active1"><b><a href="./index.html">HOME</a></b></div>
+                <div class="point active2"><b><a href="./about.html">BLOG</a></b></div>
+                <div class="point active3"><b><a href="./joining.html">APPLY</a></b></div>
+                <div class="point active4"><b><a href="./contact.html">CONTACT</a></b></div>
+                <div class="active active5"><button class="koina sab"><b><a href="signup.html">Sign Up</a></b></button></div>
+                <div class="active active6"><button class="koina thike"><b><a href="login.html">Log In</a></b></button></div>   
+        </div>
+    </header>
+    <main>
+        <div class="soon">
+    <div class="container1">
+        STEP UP YOUR
+    </div>
+    <div class="container2">
+        FITNESS CHALLENGE
+    </div>
+    <DIV class="container3">
+        WITH US
+    </DIV>
+    <div class="member">
+        <b><a href="./joining.html">JOIN NOW</a></b>
+    </div>
+    </div>
+    </main> 
+</body>
+</html>
